@@ -175,7 +175,7 @@ const enviarEmail = (body, nome) => {
             Host: "smtp.gmail.com", // Provedor host SMPT - Atual: Gmail
             Username: "naomerespondanfs@gmail.com", //Email de conexão no SMTP
             Password: "mfs@2019", // Senha do email, Recomendado usar https://obfuscator.io/
-            To: 'gabriel@emailna.co', // Email que será enviado o formulário
+            To: 'nando.m.s1990@gmail.com', // Email que será enviado o formulário
             From: 'naomerespondanfs@gmail.com',
             Subject: "Email de contato site: " + nome,
             Body: body
