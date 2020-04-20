@@ -50,7 +50,7 @@ $(document).ready(() => {
             openInNewTab('https://www.instagram.com/g_duarts/')
         });
         $("#botaoWhats").click(() => {
-            openInNewTab('https://web.whatsapp.com/send?phone=553492305475&text&source&data')
+            openInNewTab('https://api.whatsapp.com/send?phone=553492305475&text=Ol%C3%A1%20vim%20pelo%20site')
         });
         $("#botaoTwitter").click(() => {
             openInNewTab('https://twitter.com/gabriel160499')
