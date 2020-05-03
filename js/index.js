@@ -44,16 +44,16 @@ $(document).ready(() => {
             openInNewTab('https://web.whatsapp.com/send?phone=553492305475&text&source&data')
         });
         $("#botaoFace").click(() => {
-            openInNewTab('https://www.facebook.com/Gabriields18')
+            openInNewTab('https://www.facebook.com/profile.php?id=100001625138061')
         });
         $("#botaoInsta").click(() => {
-            openInNewTab('https://www.instagram.com/g_duarts/')
+            openInNewTab('https://www.instagram.com/nando_m_s/?igshid=1gl3h7bu8199f')
         });
         $("#botaoWhats").click(() => {
             openInNewTab('https://api.whatsapp.com/send?phone=553492305475&text=Ol%C3%A1%20vim%20pelo%20site')
         });
         $("#botaoTwitter").click(() => {
-            openInNewTab('https://twitter.com/gabriel160499')
+            alert('Sem Twitter')
         });
         //Os KeyPress são utilizados para resetar os campos do formulário de contato
         $("#contact_name").keypress((e) => {
