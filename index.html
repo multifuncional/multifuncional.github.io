@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/balloon.css">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css" />
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/smtp.js"></script>
@@ -25,51 +27,69 @@
     <!-- Primary Meta Tags -->
     <title>MultiFuncional Serviços</title>
     <meta name="title" content="MultiFuncional Serviços">
-    <meta name="description" content="MultiFuncional Serviços - Montagem de imoveis, Fretes, serviços elétricos residências em Uberlândia">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153102927-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <meta name="description"
+        content="MultiFuncional Serviços - Montagem de imoveis, Fretes, serviços elétricos residências em Uberlândia">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153102927-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-	  gtag('config', 'UA-153102927-1');
-	</script>
+        gtag('config', 'UA-153102927-1');
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <!-- <meta property="og:url" content="Endereço do site"> -->
     <meta property="og:title" content="MultiFuncional Serviços">
-    <meta property="og:description" content="MultiFuncional Serviços - Montagem de imoveis, Fretes, serviços elétricos residências em Uberlândia">
+    <meta property="og:description"
+        content="MultiFuncional Serviços - Montagem de imoveis, Fretes, serviços elétricos residências em Uberlândia">
     <meta property="og:image" content="img/img-01.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <!-- <meta property="twitter:url" content="Endereço do site"> -->
     <meta property="twitter:title" content="MultiFuncional Serviços">
-    <meta property="twitter:description" content="MultiFuncional Serviços - Montagem de imoveis, Fretes, serviços elétricos residências em Uberlândia">
+    <meta property="twitter:description"
+        content="MultiFuncional Serviços - Montagem de imoveis, Fretes, serviços elétricos residências em Uberlândia">
     <meta property="twitter:image" content="img/img-01.jpg">
 </head>
 
 <body>
-<style>
-	.itemD {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-	</style>
-<div style=" overflow: hidden; background-color: #333; position: fixed; top: 0; width: 100%;">
-  <span class="itemD">Entre em contato comigo pelos numeros: <strong>(34) 99230-5475 ou  (34) 99909-2622</strong> </span>
+    <style>
+        .itemD {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            z-index: 2 !important;
+        }
 
-</div>
+        .wppBtn {
 
+            text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+
+        }
+    </style>
+    <div style=" overflow: hidden; background-color: #333; position: fixed; top: 0; width: 100%;">
+        <span class="itemD">Entre em contato comigo pelos numeros: <strong>(34) 99230-5475 ou (34) 99909-2622</strong>
+            ou <strong class="wppBtn" id="clickWpp">Me chame no
+                WhatsApp &nbsp;<i class="fab fa-whatsapp"></i></strong> </span>
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.getElementById('clickWpp').onclick = () => {
+                openInNewTab('https://web.whatsapp.com/send?phone=553492305475&text&source&data')
+            }
+        });
+    </script>
     <!-- page header -->
-    <div class="container" id="home">
+    <div class="container" style="margin-top: 4vw;" id="home">
         <div class="col-12 text-center">
             <div class="tm-page-header">
                 <i class="material-icons-round logo ferramenta">build</i>
@@ -84,7 +104,8 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav" aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav"
+                            aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -105,10 +126,9 @@
                                     <a class="nav-link" href="#contact">Contato</a>
                                 </li>
                                 <li class="nav-item user-select-none">
-                                    <a class="nav-link" id="botaoWpp"><i
-                                        class="fab fa-whatsapp"></i>	&nbsp;WhatsApp</a>
+                                    <a class="nav-link" id="botaoWpp"><i class="fab fa-whatsapp"></i> &nbsp;WhatsApp</a>
                                 </li>
-			
+
                             </ul>
                         </div>
                     </nav>
@@ -142,12 +162,19 @@
                     <h3 class="tm-feature-h">Quem somos?</h3>
                 </header>
                 <p>
-                    A Multifuncional serviços nasceu em Dezembro de 2016 com serviço de montagem de móveis, logo em 2017 começou a fazer também serviços elétricos, em 2018 ouve uma nova incorporação do serviço de Mudança. Prestamos serviços para grandes empresas do setor
-                    de comércio de móveis da cidade de Uberlândia. Em 2019 figurou entre as três principais empresas montagem de móveis da cidade.
+                    A Multifuncional serviços nasceu em Dezembro de 2016 com serviço de montagem de móveis, logo em 2017
+                    começou a fazer também serviços elétricos, em 2018 ouve uma nova incorporação do serviço de Mudança.
+                    Prestamos serviços para grandes empresas do setor
+                    de comércio de móveis da cidade de Uberlândia. Em 2019 figurou entre as três principais empresas
+                    montagem de móveis da cidade.
                 </p>
-                <p> Somos uma empresa que valoriza o profissional de qualidade, e que priva sempre por fazer o que for possível para atender o cliente independente da dificuldade e do trabalho. Para toda vez que você precisar.</p>
+                <p> Somos uma empresa que valoriza o profissional de qualidade, e que priva sempre por fazer o que for
+                    possível para atender o cliente independente da dificuldade e do trabalho. Para toda vez que você
+                    precisar.</p>
                 <br>
-                <p>A nossa alegria é a sua satisfação, e por isso damos garantia dos nosso serviço de 90 Dias. Para toda vez que você precisa de nossos serviços ou seus amigos o nosso nome seja o primeiro a ser lembrando.</p>
+                <p>A nossa alegria é a sua satisfação, e por isso damos garantia dos nosso serviço de 90 Dias. Para toda
+                    vez que você precisa de nossos serviços ou seus amigos o nosso nome seja o primeiro a ser lembrando.
+                </p>
             </section>
 
         </div>
@@ -168,12 +195,15 @@
             <div class="col-lg-6">
                 <div class="tm-activity-block">
                     <div class="tm-activity-img-container">
-                        <img src="img/img-01.jpg" width="180" height="180" alt="Image" class="tm-activity-img user-select-none" />
+                        <img src="img/img-01.jpg" width="180" height="180" alt="Image"
+                            class="tm-activity-img user-select-none" />
                     </div>
                     <div class="tm-activity-block-text">
                         <h3 class="tm-text-blue">Serviço de mudança personalizado</h3>
                         <h6>
-                            Embalamos a sua mudança pra você, e fazemos todos os serviços de montador de móveis, eletricista, pintor e pedreiro,além do frete, para sua casa ficar do jeito que você precisa sem você colocar a mão na massa.
+                            Embalamos a sua mudança pra você, e fazemos todos os serviços de montador de móveis,
+                            eletricista, pintor e pedreiro,além do frete, para sua casa ficar do jeito que você precisa
+                            sem você colocar a mão na massa.
                         </h6>
                     </div>
                 </div>
@@ -181,15 +211,16 @@
             <div class="col-lg-6">
                 <div class="tm-activity-block mr-lg-0 ml-lg-auto">
                     <div class="tm-activity-img-container">
-                        <img src="img/img-02.jpg" width="180" height="180" alt="Image" class="tm-activity-img user-select-none" />
+                        <img src="img/img-02.jpg" width="180" height="180" alt="Image"
+                            class="tm-activity-img user-select-none" />
                     </div>
                     <div class="tm-activity-block-text">
                         <h3 class="tm-text-blue">Eletricista</h3>
                         <p>
-                            <h6>Instalação de redes elétricas residênciais . </h6>
-                            <h6> Mudança de voltagem de tomada.</h6>
-                            <h6>Instalação de chuveiros.</h6>
-                            <h6>Instalação de ar condicionado. Etc.</h6>
+                        <h6>Instalação de redes elétricas residênciais . </h6>
+                        <h6> Mudança de voltagem de tomada.</h6>
+                        <h6>Instalação de chuveiros.</h6>
+                        <h6>Instalação de ar condicionado. Etc.</h6>
 
                     </div>
                 </div>
@@ -197,7 +228,8 @@
             <div class="col-lg-6">
                 <div class="tm-activity-block">
                     <div class="tm-activity-img-container">
-                        <img src="img/img-03.jpg" alt="Image" width="180" height="180" class="tm-activity-img user-select-none" />
+                        <img src="img/img-03.jpg" alt="Image" width="180" height="180"
+                            class="tm-activity-img user-select-none" />
                     </div>
                     <div class="tm-activity-block-text">
                         <h3 class="tm-text-blue">Montagem de móveis
@@ -214,12 +246,13 @@
             <div class="col-lg-6">
                 <div class="tm-activity-block mr-lg-0 ml-lg-auto">
                     <div class="tm-activity-img-container">
-                        <img src="img/img-04.jpg" alt="Image" width="180" height="180" class="tm-activity-img user-select-none" />
+                        <img src="img/img-04.jpg" alt="Image" width="180" height="180"
+                            class="tm-activity-img user-select-none" />
                     </div>
                     <div class="tm-activity-block-text">
                         <h3 class="tm-text-blue">Lavagem de sofá</h3>
                         <p>
-                         Serviços de limpeza e impermeabilização de sofá, cadeiras e bancos de carro</p>
+                            Serviços de limpeza e impermeabilização de sofá, cadeiras e bancos de carro</p>
                     </div>
                 </div>
             </div>
@@ -236,29 +269,33 @@
                         <h2 class="tm-contact-header user-select-none">Entre em contato</h2>
                     </header>
                     <div class="form-group">
-                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Nome" required />
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Nome"
+                            required />
                     </div>
                     <div class="form-group">
-                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required />
+                        <input type="email" id="contact_email" name="contact_email" class="form-control"
+                            placeholder="Email" required />
                     </div>
                     <div class="form-group">
-                        <textarea rows="5" id="contact_message" name="contact_message" class="form-control" placeholder="Mensagem" required></textarea>
+                        <textarea rows="5" id="contact_message" name="contact_message" class="form-control"
+                            placeholder="Mensagem" required></textarea>
                     </div>
                     <div class="form-group">
                         <div id="captcha" class="captcha">
                         </div>
-                        <input id="captchaText" name="captchaText" class="form-control" placeholder="Insira o texto a cima" required />
+                        <input id="captchaText" name="captchaText" class="form-control"
+                            placeholder="Insira o texto a cima" required />
                     </div>
                     <div class="tm-text-right">
                         <span class="shareButtons">
                             <span id="botaoTwitter" target="_blank" class="icon-button twitter user-select-none"><i
                                     class="fab fa-twitter"></i><span></span></span>
-                        <span id="botaoFace" class="icon-button facebook"><i
+                            <span id="botaoFace" class="icon-button facebook"><i
                                     class="fab fa-facebook-f"></i><span></span></span>
-                        <span id="botaoInsta" class="icon-button instagram"><i
+                            <span id="botaoInsta" class="icon-button instagram"><i
                                     class="fab fa-instagram"></i><span></span></span>
-                        <span id="botaoWhats" class="icon-button whatsApp"><i
-                                        class="fab fa-whatsapp"></i><span></span></span>
+                            <span id="botaoWhats" class="icon-button whatsApp"><i
+                                    class="fab fa-whatsapp"></i><span></span></span>
 
                         </span>
 
@@ -282,7 +319,8 @@
                     <figure class="d-inline-block">
                         <img src="img/img-06.jpg" alt="Image" class="img-fluid imgContato user-select-none" />
                         <figcaption class="tm-contact-figcaption user-select-none">
-                            Passamos todos os cartões e parcelamos em até 12 vezes a sua mudança. Faca já seu orçamento sem compromisso. </figcaption>
+                            Passamos todos os cartões e parcelamos em até 12 vezes a sua mudança. Faca já seu orçamento
+                            sem compromisso. </figcaption>
                         <br>
                         <img src="img/bandeiras_cartoes.png" class="user-select-none" height="100px" alt="">
                     </figure>
@@ -294,7 +332,8 @@
         <div class="row tm-footer-row user-select-none">
             <p class="col-md-10 col-sm-12 mb-0">
                 Copyright &copy; 2019 MultiFuncional Serviços - Programador:
-                <a rel="nofollow" href="https://www.facebook.com/Gabriields18" target="_blank" class="tm-footer-link">Gabriel Duarte</a>
+                <a rel="nofollow" href="https://www.facebook.com/Gabriields18" target="_blank"
+                    class="tm-footer-link">Gabriel Duarte</a>
             </p>
             <div class="col-md-2 col-sm-12 scrolltop">
                 <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
@@ -384,7 +423,7 @@
                 filter: ":not(.external)",
                 offset: $(".tm-nav-section").outerHeight(),
                 updateHash: true,
-                beforeStart: function() {
+                beforeStart: function () {
                     mainNav.removeClass("show");
                 }
             });
@@ -418,8 +457,8 @@
             background_image_parallax($(".tm-parallax"), 0.4);
             $(".scroll").click(() => {
                 $("html,body").animate({
-                        scrollTop: $("#home").offset().top
-                    },
+                    scrollTop: $("#home").offset().top
+                },
                     "1000"
                 );
                 return false;
